@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background-color: #171323;
+
+    color: white;
+
+    font-family: "Courier New", monospace;
+
+    text-align: center;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 50px 25px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.stars {
+
+    color: #ffd1e5;
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 35px;
+
+    animation: twinkle 2s infinite;
+}
+
+
+/* =========================
+   HEART
+========================= */
+
+.big-heart {
+
+    font-size: 110px;
+
+    color: #ff5c9a;
+
+    text-shadow:
+        6px 6px #7c3155;
+
+    animation: heartbeat 1.2s infinite steps(2);
+
+    margin-bottom: 10px;
+}
+
+
+.big-heart.small {
+
+    font-size: 70px;
+
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+
+    font-size: 40px;
+
+    color: #ff7eaf;
+
+    text-shadow:
+        5px 5px #743052;
+
+    margin: 10px 0 15px;
+}
+
+
+.subtitle {
+
+    color: #ffd1e5;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+
+    color: #ff7eaf;
+
+    font-size: 18px;
+
+    margin: 35px 0;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+
+    background-color: #21192f;
+
+    border: 4px solid #ff7eaf;
+
+    padding: 35px 30px;
+
+    box-shadow:
+        8px 8px #5d2947;
+
+    text-align: left;
+}
+
+
+.letter h2 {
+
+    text-align: center;
+
+    color: #ff9fc3;
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+}
+
+
+.letter p {
+
+    color: #f8dce8;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+.love-message {
+
+    color: #ff7eaf !important;
+
+    font-weight: bold;
+
+    font-size: 18px !important;
+
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   MONTHSARY SECTION
+========================= */
+
+.monthsary {
+
+    background-color: #21192f;
+
+    border: 4px solid #ff7eaf;
+
+    padding: 30px;
+
+    box-shadow:
+        8px 8px #5d2947;
+}
+
+
+.monthsary h2 {
+
+    color: #ff9fc3;
+
+    font-size: 22px;
+
+    text-shadow:
+        3px 3px #63304a;
+}
+
+
+.monthsary p {
+
+    color: #f8dce8;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.special {
+
+    color: #ff9fc3 !important;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MINI HEARTS
+========================= */
+
+.mini-hearts {
+
+    color: #ff5c9a;
+
+    font-size: 25px;
+
+    margin: 15px 0;
+}
+
+
+/* =========================
+   ENDING
+========================= */
+
+.ending {
+
+    background-color: #21192f;
+
+    border: 4px solid #ff7eaf;
+
+    padding: 35px 25px;
+
+    box-shadow:
+        8px 8px #5d2947;
+}
+
+
+.ending h2 {
+
+    color: #ff9fc3;
+
+    font-size: 30px;
+
+    text-shadow:
+        3px 3px #63304a;
+}
+
+
+.ending p {
+
+    color: #f8dce8;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top: 40px;
+
+    color: #9d8191;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floating-hearts {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+.floating-hearts span {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    color: #ff5c9a;
+
+    font-size: 20px;
+
+    animation: floatUp 8s linear infinite;
+}
+
+
+.floating-hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+
+.floating-hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+
+.floating-hearts span:nth-child(3) {
+    left: 45%;
+    animation-delay: 4s;
+}
+
+
+.floating-hearts span:nth-child(4) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+
+.floating-hearts span:nth-child(5) {
+    left: 80%;
+    animation-delay: 3s;
+}
+
+
+.floating-hearts span:nth-child(6) {
+    left: 90%;
+    animation-delay: 5s;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+@keyframes twinkle {
+
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+
+}
+
+
+@keyframes floatUp {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    10% {
+
+        opacity: 1;
+
+    }
+
+    90% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================
+   PHONE SCREEN
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 35px 15px;
+
+    }
+
+
+    h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .big-heart {
+
+        font-size: 80px;
+
+    }
+
+
+    .letter,
+    .monthsary,
+    .ending {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .letter p,
+    .monthsary p,
+    .ending p {
+
+        font-size: 14px;
+
+    }
+
+
+    .letter h2,
+    .monthsary h2 {
+
+        font-size: 18px;
+
+    }
+
+}
